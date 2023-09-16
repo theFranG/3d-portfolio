@@ -22,10 +22,18 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import zod from "./tech/zod.png"
 import thirdweb from "./tech/thirdweb.png"
+import canvas from "./tech/canvas.png"
 
 import vox from "./projects/vox.jpg"
 import murcielaco from "./projects/murcielaco.jpg"
 import shopi from "./projects/shopi.jpg"
+import katana from "./projects/katana.jpg"
+import bank from "./projects/bank.jpg"
+import todo from "./projects/todo.jpg"
+import pokedux from "./projects/pokedux.jpg"
+import avicii from "./projects/avicii.jpg"
+import batatabit from "./projects/batatabit.jpg"
+import calculator from "./projects/calculator.jpg"
 
 export {
   logo,
@@ -51,7 +59,15 @@ export {
   threejs,
   zod,
   thirdweb,
+  canvas,
   vox,
   murcielaco,
-  shopi
+  shopi,
+  katana,
+  bank,
+  todo,
+  pokedux,
+  avicii,
+  batatabit,
+  calculator
 };

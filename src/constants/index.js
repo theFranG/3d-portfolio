@@ -17,9 +17,17 @@ import {
     zod,
     thirdweb,
     vox,
+    canvas,
+    redux,
     murcielaco,
-    shopi
-
+    shopi,
+    katana,
+    bank,
+    todo,
+    pokedux,
+    avicii,
+    batatabit,
+    calculator
   } from "../assets";
   
   export const navLinks = [
@@ -152,6 +160,105 @@ import {
       image: shopi,
       project_link:'https://react-ecommerce-alpha-ashen.vercel.app/',
       source_code_link: "https://github.com/Francogomez23800/React-Ecommerce",
+    },
+    {
+      url: "katana-fight",
+      name: "Katana Fight",
+      description:
+        "My inaugural game project was an invaluable learning experience in JavaScript, focusing on logic, classes, methods, and event listeners. Inspired by Chris Courses on YouTube, it's an interactive HTML5 canvas-based fighting game.",
+      detailed_description:"This was the first game I created, and it helped me a lot in my learning of logic with JavaScript, using classes, methods, and listeners to bring the game to life. I originally took the idea for this game from a YouTube channel called Chris Courses, and I really enjoyed making it. \nIn general, the code creates an interactive animation of a fighting game on an HTML5 canvas, where the player and the enemy can move and perform actions like attacks. The collision detection logic and health management add elements of gameplay and competition. This is a player vs player game and only for desktop devices.\n\n Player1 controls:\n W: Jump, D: Move forward, A: Move Backward, Space: Attack. \n\n Player2 controls:\n 🡡: Jump, 🡢: Move forward, 🡠: Move Backward, 🡣: Attack",  
+      technologies:[
+        javascript,
+        html,
+        canvas
+      ],
+      image: katana,
+      project_link:'https://francogomez23800.github.io/Fighting-Game/',
+      source_code_link: "https://github.com/Francogomez23800/Fighting-Game",
+    },
+    {
+      url: "bank-app",
+      name: "Bank App",
+      description:
+        "This project involved crafting a landing page for a fictional bank, using free and copyright-free designs for skill demonstration and learning purposes.",
+      detailed_description:"In this practice, I decided to work on creating a landing page for a fictional bank. The designs used were taken from free and copyright-free sources, and were solely used for learning and showcasing my skills.\n\nKey features:\n\n- Modern and appealing design, highlighting a user-friendly and functional interface.\n\n- Implementation of reusable components and organized folder structure.\n\n- Integration of smooth animations to enhance the user experience.\n\n- Utilization of technologies like React and Tailwind CSS for efficient development and responsive design.",  
+      technologies:[
+        reactjs,
+        javascript,
+        tailwind
+      ],
+      image: bank,
+      project_link:'https://francogomez23800.github.io/bank_app/',
+      source_code_link: "https://github.com/Francogomez23800/bank_app/tree/Files/Desktop/React.js/Bank_Modern_App",
+    },
+    {
+      url: "todo-react",
+      name: "To-Do",
+      description:"I created my inaugural 'To-Do List' app using React, augmenting the user interface with select components from the Material-UI library. Users can easily add, edit, and remove tasks from their to-do lists.",
+      detailed_description:"With the help of Platzi, I made my very first 'To-Do List' application using the power of React and enhancing the user interface with select components from the Material-UI library. Users can effortlessly add, edit, and remove tasks from their to-do list, enhancing their productivity and organization.\n This project allowed me to delve into the world of web development and gain hands-on experience in building interactive and dynamic user interfaces.",  
+      technologies:[
+        reactjs,
+        javascript
+      ],
+      image: todo,
+      project_link:'https://francogomez23800.github.io/Todo-React.js/',
+      source_code_link: "https://github.com/Francogomez23800/Todo-React.js",
+    },
+    {
+      url: "pokedux",
+      name: "Pokedux",
+      description:"I created this page using React and Redux, incorporating a Pokémon API to retrieve a list of creatures. I also added a feature that enables users to add their preferred Pokémon to a favorites list, which is consistently saved in the local storage.",
+      detailed_description:"This is a creation of a webpage using React and Redux, where I utilize a Pokémon API to fetch a list of creatures. Additionally, I implemented an interesting feature that allows users to add their favorite Pokémon to a special favorites list, which is persistently stored in the browser's localstorage.\n\nCharacteristics:\n\nState Management with Redux: Enhanced manipulation and updating of favorite Pokémon data across the entire application.\n\nFavorites List Functionality: Users can explore the complete Pokémon list and select their favorites.\n\nLocalstorage Persistence.",  
+      technologies:[
+        reactjs,
+        redux,
+        javascript,
+        tailwind
+      ],
+      image: pokedux,
+      project_link:'https://francogomez23800.github.io/pokedux/',
+      source_code_link: "https://github.com/Francogomez23800/pokedux",
+    },
+    {
+      url: "avicii",
+      name: "Avicii Landing Page",
+      description:"This project involves data retrieval from the YouTube API using Fetch and subsequently generating HTML content based on the acquired data. It focuses on Avicii, one of my favorite artists. While the page is not responsive, I am pleased with the outcomes and its overall aesthetics.",
+      detailed_description:"This project involves data retrieval from the YouTube API using Fetch and subsequently generating HTML content based on the acquired data. It focuses on Avicii, one of my favorite artists. While the page is not responsive, I am pleased with the outcomes and its overall aesthetics.",  
+      technologies:[
+        javascript,
+        html,
+        tailwind
+      ],
+      image: avicii,
+      project_link:'https://francogomez23800.github.io/Async-Avicii/',
+      source_code_link: "https://github.com/Francogomez23800/Async-Avicii/",
+    },
+    {
+      url: "batatabit",
+      name: "Batatabit",
+      description:"Cryptocurrency transaction webpage using only HTML and CSS. The page is designed to be fully responsive and user-friendly. It provides users with a comprehensible and intuitive interface.",
+      detailed_description:"This project entails the development of a cryptocurrency transaction webpage, exclusively utilizing HTML and CSS. The primary objective is to craft a fully responsive and user-centric interface. The design prioritizes clarity and intuitiveness, ensuring that users can easily navigate and execute cryptocurrency transactions with confidence. Through meticulous attention to detail and thoughtful design choices, this webpage aims to offer a seamless and enjoyable user experience for individuals engaging in cryptocurrency transactions.",  
+      technologies:[
+        html,
+        css
+      ],
+      image: batatabit,
+      project_link:'https://francogomez23800.github.io/Batatabit-Mobile_First/',
+      source_code_link: "https://github.com/Francogomez23800/Batatabit-Mobile_First",
+    },
+    {
+      url: "calculator",
+      name: "Calculator",
+      description:"This is my second calculator project, and I've made several improvements since the first one. I've focused on making the interface user-friendly, so anyone can use it without any trouble. It still does all the basic calculator stuff, but it looks much better.",
+      detailed_description:"This is my second calculator project, and I've made several improvements since the first one. This time, I used only HTML, CSS, and JavaScript to create it. One cool feature is the dark mode, which makes it easier on the eyes, especially in low light. I've also focused on making the interface user-friendly, so anyone can use it without any trouble. It still does all the basic calculator stuff, but it looks much better.",  
+      technologies:[
+        javascript,
+        html,
+        css
+      ],
+      image: calculator,
+      project_link:'https://francogomez23800.github.io/Calculator-2.0/',
+      source_code_link: "https://github.com/Francogomez23800/Calculator-2.0",
     },
   ];
   
