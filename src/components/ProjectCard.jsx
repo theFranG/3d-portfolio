@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
@@ -15,10 +15,11 @@ const ProjectCard = ({
     image,
     source_code_link,
   }) => {
+
     return (
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        whileHover={isMobile ? { scale: 1.05, transition: { duration: 0.2 }} : { scale: 1 }}
+        whileHover={!isMobile() ? { scale: 1.05, transition: { duration: 0.2 }} : { scale: 1 }}
         className="bg-[#333333] p-5 rounded-2xl max-w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
