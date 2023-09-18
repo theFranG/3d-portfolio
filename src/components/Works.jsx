@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import ProjectCard from "./ProjectCard"
 
 const Works = () => {
-  return (
+  return ( 
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
