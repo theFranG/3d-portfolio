@@ -1,15 +1,14 @@
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center w-full h-screen mx-auto">
+    <section className="relative flex flex-col items-center w-full h-[100vh] md:h-screen mx-auto">
       <div
         className={`${styles.paddingX} sm:relative md:absolute inset-0 justify-center
-        max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-5 h-full`}
+        max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-5 h-full`}
       >
       <div className="circle"/>
-        <div className="hidden md:flex flex-col justify-center items-center mt-5">
+        <div className="hidden md:flex flex-col justify-center items-center mt-5  ">
           <div className="w-5 h-5 rounded-full bg-[#D4AF37]" />
           <div className="w-1 sm:h-80 h-40 golden-gradient" />
         </div>
