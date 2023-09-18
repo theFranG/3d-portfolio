@@ -4,6 +4,7 @@ import { fadeIn } from "../utils/motion";
 
 import { github } from "../assets";
 import Button from "./ui/Button";
+import { isMobile, hoverVariants } from "../utils/motion";
 
 
 const ProjectCard = ({
@@ -17,7 +18,7 @@ const ProjectCard = ({
     return (
       <motion.div
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-        whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+        whileHover={!isMobile ? { scale: 1.05, transition: { duration: 0.2 }} : { scale: 1 }}
         className="bg-[#333333] p-5 rounded-2xl max-w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
