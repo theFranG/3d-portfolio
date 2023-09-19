@@ -137,3 +137,16 @@ export function isMobile() {
   return window.innerWidth < mobileWidthThreshold;
 }
 
+
+import { useLayoutEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+export function ScrollToTop (){
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo({top:0, behavior:"auto"});
+  }, [pathname]);
+
+  return null
+};
