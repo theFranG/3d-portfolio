@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import { BackButton, GitButton } from "../components/ui/Button";
+import { isMobile } from "../utils/motion";
 
 const ProjectPage = () => {
   const { projectName } = useParams();
@@ -28,25 +29,27 @@ const ProjectPage = () => {
           className="w-full flex items-center justify-center pt-10 pb-5 md:p-10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+          transition={{ duration: 1, ease: "easeOut" }}>
           <a href={project.project_link} target="_blank" className="relative">
             <motion.img
               src={project.image}
               alt="project image"
-              className="project-image-gradient p-[1px] rounded-[20px] shadow-card w-[750px]"
+              className="w-[750px] project-image-gradient  
+                        rounded-[20px] shadow-card p-[1px]"
             />
             <motion.div
-              className="absolute rounded-[19px] bg-black bg-opacity-50 items-center w-full bottom-0 h-full flex justify-center"
-              initial={{ opacity: 0 }}
-              whileHover={{ opacity: 1 }}
-            >
+              className="absolute w-full h-full rounded-[19px] bg-opacity-50 
+                        items-center bottom-0 flex bg-black justify-center"
+              initial={{ opacity: 1 }}
+              whileHover={{ opacity: 0 }}>
               <h3
                 className={`text-[26px] font-semibold p-1 absolute bottom-14`}
               >
                 {project.name}
               </h3>
-              <span className="absolute bottom-10">click to visit</span>
+              <span className="absolute hidden md:block bottom-10">click to visit</span>
+              <span className="absolute hidden sm:block md:hidden bottom-10">visit website</span>
+              <span className="absolute sm:hidden bottom-10">tap to visit</span>
             </motion.div>
           </a>
         </motion.div>
