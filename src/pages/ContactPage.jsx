@@ -1,11 +1,11 @@
-import { Navbar } from "../components"
+import { Navbar } from "../components";
 
 const ContactPage = () => {
   return (
     <div>
-        <Navbar />
+      <Navbar />
     </div>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

@@ -32,8 +32,8 @@ import {
   
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: "",
+      title: "Home",
     },
     {
       id: "work",
@@ -221,7 +221,7 @@ import {
     },
     {
       url: "avicii",
-      name: "Avicii Landing Page",
+      name: "Avicii",
       description:"This project involves data retrieval from the YouTube API using Fetch and subsequently generating HTML content based on the acquired data. It focuses on Avicii, one of my favorite artists. While the page is not responsive, I am pleased with the outcomes and its overall aesthetics.",
       detailed_description:"This project involves data retrieval from the YouTube API using Fetch and subsequently generating HTML content based on the acquired data. It focuses on Avicii, one of my favorite artists. While the page is not responsive, I am pleased with the outcomes and its overall aesthetics.",  
       technologies:[
