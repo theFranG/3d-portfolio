@@ -76,7 +76,7 @@ const ProjectPage = () => {
               ))}
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 xs:mt-5 sm:mt-0">
             <BackButton url='/work'/>
             <GitButton url={project.project_link} />
           </div>
