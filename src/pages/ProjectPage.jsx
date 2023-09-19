@@ -5,21 +5,25 @@ import { styles } from "../styles";
 import { motion } from "framer-motion";
 import React from "react";
 
+import { BackButton, GitButton } from "../components/ui/Button";
+
 const ProjectPage = () => {
   const { projectName } = useParams();
   const project = projects.find((p) => p.url === projectName);
-  const description = project?.detailed_description.split("\n").map((item, index) => (
-    <React.Fragment key={index}>
-      {item}
-      <br />
-    </React.Fragment>
-  ));
+  const description = project?.detailed_description
+    .split("\n")
+    .map((item, index) => (
+      <React.Fragment key={index}>
+        {item}
+        <br />
+      </React.Fragment>
+    ));
 
   return (
     <>
       <Navbar />
       <div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
-        <h2 className={`${styles.sectionHeadText} mt-10`}>{project.name}</h2>
+        <h2 className={`${styles.sectionHeadText} mt-5`}>{project.name}</h2>
         <motion.div
           className="w-full flex items-center justify-center pt-10 pb-5 md:p-10"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -56,17 +60,25 @@ const ProjectPage = () => {
             {description}
           </p>
         </div>
-        <div className="flex flex-col items-center p-5">
-          <h3 className="text-[20px] text-secondary uppercase tracking-wider">Technologies</h3>
-          <div className="flex gap-3 items-center mt-2">
-            {project.technologies.map((tec, index) => (
-              <img
-                key={index}
-                src={tec}
-                alt="technology used"
-                className="w-[50px]"
-              />
-            ))}
+        <div className="flex flex-col gap-10 sm:flex-row justify-between items-center sm:items-end sm:px-0 mt-16 md:px-16 md:p-16 md:mx-10 ">
+          <div className="flex flex-col items-center">
+            <h3 className="text-[20px] text-secondary uppercase tracking-wider">
+              Technologies
+            </h3>
+            <div className="flex gap-3 items-center mt-2">
+              {project.technologies.map((tec, index) => (
+                <img
+                  key={index}
+                  src={tec}
+                  alt="technology used"
+                  className="w-[50px]"
+                />
+              ))}
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <BackButton url='/work'/>
+            <GitButton url={project.project_link} />
           </div>
         </div>
       </div>

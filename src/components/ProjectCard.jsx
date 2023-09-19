@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
 import { github } from "../assets";
-import Button from "./ui/Button";
+import {Button} from "./ui/Button";
 import { isMobile } from "../utils/motion";
 
 
