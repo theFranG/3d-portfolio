@@ -7,11 +7,22 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const isFormValid = (formData) => {
+  const requiredFields = ["name", "email", "subject", "message"];
+  for (const field of requiredFields) {
+    if (!formData[field]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -31,19 +42,14 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    if (!isFormValid(form)) {
+      setLoading(false);
+      alert("Please complete all required fields.");
+      return
+    }
+
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
+      .sendForm('service_zlsgakv', 'template_ogntqq8', formRef.current, 'Y255d3382mYI7pG2z')
       .then(
         () => {
           setLoading(false);
@@ -52,6 +58,7 @@ const Contact = () => {
           setForm({
             name: "",
             email: "",
+            subject: "",
             message: "",
           });
         },
@@ -59,7 +66,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Something went wrong. Please try again.");
         }
       );
   };
@@ -70,7 +77,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-[#333333] p-8 rounded-2xl'
+        className='flex-[0.75] p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -103,6 +110,17 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
+          <span className='text-white font-medium mb-4'>Subject</span>
+            <input
+              type='text'
+              name='subject'
+              value={form.subject}
+              onChange={handleChange}
+              placeholder="subject"
+              className='bg-secondary py-4 px-6 placeholder:text-[#333333] text-black rounded-lg outline-none border-none font-medium'
+            />
+          </label>
+          <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               rows={7}
@@ -117,7 +135,7 @@ const Contact = () => {
           <button
             type='submit'
             className='bg-secondary py-3 px-8 rounded-xl outline-none w-fit
-                       text-[#333333] font-bold shadow-md shadow-primary'>
+                       text-[#060606] font-bold shadow-md shadow-primary'>
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
