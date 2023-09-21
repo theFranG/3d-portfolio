@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import About from './About';
 import Tech from './Tech';
 import Works from './Works';
+import Contact3D from './Contact3D';
 import Contact from './Contact';
 
 export {
@@ -12,9 +13,9 @@ export {
   About,
   Tech,
   Works,
-  Contact,
+  Contact3D,
   EarthCanvas, 
   BallCanvas, 
- 
+  Contact,
   StarsCanvas
 }

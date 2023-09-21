@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import { BackButton, GitButton } from "../components/ui/Button";
-import { isMobile } from "../utils/motion";
 
 const ProjectPage = () => {
   const { projectName } = useParams();

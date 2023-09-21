@@ -1,4 +1,4 @@
-import { About, Contact, Hero, Navbar, Tech, Works, StarsCanvas,} from "../components";
+import { About, Contact3D, Hero, Navbar, Tech, Works, StarsCanvas,} from "../components";
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     <Tech />
     <Works />
     <div className='relative z-0'>
-      <Contact />
+      <Contact3D/>
       <StarsCanvas />
     </div>
   </div>
