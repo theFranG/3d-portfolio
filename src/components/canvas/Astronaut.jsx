@@ -1,22 +1,33 @@
 import React, { Suspense, useEffect, useRef } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, useAnimations} from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
  const Astronaut = (props) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('astronaut1/scene.gltf')
+  const { nodes, materials, animations } = useGLTF('astronaut/scene.gltf')
   const { actions } = useAnimations(animations, group)
 
+  const initialYPosition = 0; 
+  const floatAmplitude = 0.2; 
+  const floatSpeed = 0.03; 
+  let time = 0;
+
+  useFrame(() => {
+    time += floatSpeed;
+    const newYPosition = initialYPosition + Math.sin(time) * floatAmplitude;
+    group.current.position.y = newYPosition;
+  });
+
+
 useEffect(()=>{
-console.log(actions)
 actions.Animation.play()
 },[])
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={2.25} position-y={-3}>
+        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={2.5} position-y={-2.7}>
           <group name="root">
             <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
               <group name="Walking_astronaut_94">
@@ -52,19 +63,20 @@ actions.Animation.play()
   )
 }
 
-useGLTF.preload('astronaut1/scene.gltf')
+useGLTF.preload('astronaut/scene.gltf')
 
 const AstronautCanvas = () => {
   return (
     <Canvas>
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader/>}>
+        
         <OrbitControls
         enabled={false}
           enableRotate={false}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} />
-        <spotLight intensity={3} position={[0, 2.5, 0.5]}/>
+        <spotLight intensity={3} position={[0, 3.1, 0.5]}/>
         <directionalLight intensity={2} position={[0, -0.3, 0.05]} />
         <Astronaut />
         <Preload all />
