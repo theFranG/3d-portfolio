@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants/index";
-import { menu, close } from "../assets/index";
+import { menu, close, logo } from "../assets/index";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      } w-full flex items-center py-3 fixed top-0 z-20 ${
         scrolled || toggle ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -42,9 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-white text-[18px] font-bold cursor-pointer">
-            FranG<span className="sm:block hidden"> | Web Developer</span>
-          </p>
+          <img src={logo} alt="logo" className="sm:h-[50px] h-[40px]"/>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
