@@ -5,6 +5,7 @@ import { styles } from "../styles";
 const ContactPage = () => {
   return (
     <>
+<StarsCanvas />
       <Navbar />
       <div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
       <div className="mt-10">
@@ -19,10 +20,13 @@ const ContactPage = () => {
           </p>
         </div>
         <Contact />
+        <div className="sm:mx-[-64px] mx-[-24px] sm:my-[-64px] my-[-40px] pt-7">
       <Footer />
+      </div >
       <StarsCanvas />
+
       </div>
-<StarsCanvas />
+
     </>
   );
 };

@@ -2,7 +2,7 @@ import { _github, linkedin } from "../assets";
 
 const Footer = () => {
     return (
-      <div className="bg-custom-gray flex flex-col gap-3 max-w-7xl mx-auto py-10 px-5 md:px-5">
+      <div className="flex flex-col gap-3 max-w-7xl mx-auto py-10 px-5 md:px-5">
         <div className="flex justify-between items-end">
             <p className="text-[15px] font-light text-custom-white">
             frang.contact@gmail.com
@@ -25,6 +25,7 @@ const Footer = () => {
             © 2023 Franco Gomez. <br className="sm:hidden"/>Design by FranG.
           </p>
         </div>
+        
       </div>
     );
   };
