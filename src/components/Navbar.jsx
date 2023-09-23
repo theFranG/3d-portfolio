@@ -6,7 +6,6 @@ import { menu, close, logo } from "../assets/index";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -70,7 +69,7 @@ const Navbar = () => {
             }}
           />
           <div
-            className={`${!toggle ? "hidden" : "flex"} absolute black-transparent top-[50px] right-0 w-full rounded-xl z-10 p-6`}
+            className={`${!toggle ? "hidden" : "flex"} absolute bg-primary top-[50px] right-0 w-full rounded-xl z-10 p-6`}
           >
             <ul className="w-full list-none flex flex-col items-center gap-4">
               {navLinks.map((nav, index) => (
