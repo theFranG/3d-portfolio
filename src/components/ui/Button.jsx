@@ -25,7 +25,7 @@ export const CVButton = () => {
 export const GitButton = ({url}) => {
   return (
     <Link to={url} target="_blank">
-    <button className="w-[150px] h-[45px] rounded-xl black-gradient 
+    <button className="w-[155px] h-[42px] rounded-xl black-gradient 
                       flex items-center justify-center gap-2 hover:opacity-80">
       <img src={github} alt="source code" 
       className="w-[30px]"/>
@@ -38,7 +38,7 @@ export const GitButton = ({url}) => {
 export const BackButton = ({url}) => {
   return (
     <Link to={url}>
-    <button className="w-[150px] h-[45px] rounded-xl white-gradient text-primary
+    <button className="w-[155px] h-[42px] rounded-xl white-gradient text-primary
                       flex items-center justify-center font-semibold gap-2 hover:opacity-80">
       Back
   </button>

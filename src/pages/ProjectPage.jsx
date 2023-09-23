@@ -63,7 +63,7 @@ const ProjectPage = () => {
             {description}
           </p>
         </div>
-        <div className="flex flex-col gap-10 sm:flex-row justify-between items-center sm:items-end sm:px-0 mt-16 md:px-16 md:p-16 md:mx-10 ">
+        <div className="flex flex-col gap-10 sm:flex-row justify-between items-center sm:items-end sm:px-0 mt-16 md:px-16 md:p-16 md:mx-10 pr-1">
           <div className="flex flex-col items-center">
             <h3 className="text-[20px] text-secondary uppercase tracking-wider">
               Technologies
@@ -81,7 +81,7 @@ const ProjectPage = () => {
           </div>
           <div className="flex gap-2 xs:mt-5 sm:mt-0">
             <BackButton url='/work'/>
-            <GitButton url={project.project_link} />
+            <GitButton url={project.source_code_link} />
           </div>
         </div>
       </div>
