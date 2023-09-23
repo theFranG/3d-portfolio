@@ -1,4 +1,5 @@
 import { Navbar } from "../components";
+import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../constants";
 import { styles } from "../styles";
@@ -25,6 +26,7 @@ const WorkPage = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

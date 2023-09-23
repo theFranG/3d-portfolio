@@ -4,9 +4,11 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import _github from "./_github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import profile from "./profile.jpg"
+import linkedin from "./linkedin.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -71,5 +73,7 @@ export {
   avicii,
   batatabit,
   calculator,
-  profile
+  profile,
+  linkedin,
+  _github
 };

@@ -1,4 +1,5 @@
 import { About, Contact3D, Hero, Navbar, Tech, Works, StarsCanvas,} from "../components";
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     <div className='relative z-0'>
       <Contact3D/>
       <StarsCanvas />
+      <Footer />
     </div>
   </div>
   )

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import { BackButton, GitButton } from "../components/ui/Button";
+import Footer from "../components/Footer";
 
 const ProjectPage = () => {
   const { projectName } = useParams();
@@ -84,6 +85,7 @@ const ProjectPage = () => {
           </div>
         </div>
       </div>
+    <Footer />
     </>
   );
 };

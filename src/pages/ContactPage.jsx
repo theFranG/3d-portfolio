@@ -1,4 +1,5 @@
 import { Contact, Navbar, StarsCanvas } from "../components";
+import Footer from "../components/Footer";
 import { styles } from "../styles";
 
 const ContactPage = () => {
@@ -22,6 +23,7 @@ const ContactPage = () => {
 
         <Contact />
       </div>
+      <Footer />
     </>
   );
 };

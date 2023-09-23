@@ -47,31 +47,27 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "React Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Front-End",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Back-End",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Web Designer",
       icon: creator,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "JavaScript",
@@ -82,10 +78,6 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -94,8 +86,12 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
     },
     {
       name: "git",

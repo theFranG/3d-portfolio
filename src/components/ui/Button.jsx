@@ -13,6 +13,15 @@ export const Button = ({url}) => {
   )
 }
 
+export const CVButton = () => {
+  return (
+    <button 
+    className="p-3 bg-primary border border-white rounded-xl hover:bg-opacity-75">
+    Download CV
+  </button>
+  )
+}
+
 export const GitButton = ({url}) => {
   return (
     <Link to={url} target="_blank">
