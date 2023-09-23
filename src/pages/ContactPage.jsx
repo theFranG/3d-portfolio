@@ -6,7 +6,6 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <StarsCanvas />
       <div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
       <div className="mt-10">
         <p className={`${styles.sectionSubText} `}>Contact</p>
@@ -19,11 +18,11 @@ const ContactPage = () => {
             <span className="font-semibold"> frang.contact@gmail.com</span>
           </p>
         </div>
-      <StarsCanvas />
-
         <Contact />
-      </div>
       <Footer />
+      <StarsCanvas />
+      </div>
+<StarsCanvas />
     </>
   );
 };
