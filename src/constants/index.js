@@ -136,7 +136,7 @@ const experiences = [
     date: "Nov. 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js.",
-      "Back-end development and implementation with FastAPI.",
+      "Back-end development and implementation using FastAPI.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
