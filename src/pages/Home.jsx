@@ -1,5 +1,5 @@
-import { About, Contact3D, Hero, Navbar, Tech, Works, StarsCanvas,} from "../components";
-import Footer from "../components/Footer";
+import { About, Contact3D, Hero, Navbar, Tech, Works, StarsCanvas, Experience, Footer} from "../components";
+
 
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
       <Hero />
     </div>
     <About />
+    <Experience />
     <Tech />
     <Works />
     <div className='relative z-0'>

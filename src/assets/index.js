@@ -26,6 +26,9 @@ import threejs from "./tech/threejs.svg";
 import zod from "./tech/zod.png"
 import thirdweb from "./tech/thirdweb.png"
 import canvas from "./tech/canvas.png"
+import sql from "./tech/sql.png"
+import python from "./tech/python.png"
+import fastapi from "./tech/fastapi.svg"
 
 import vox from "./projects/vox.jpg"
 import murcielaco from "./projects/murcielaco.jpg"
@@ -37,6 +40,8 @@ import pokedux from "./projects/pokedux.jpg"
 import avicii from "./projects/avicii.jpg"
 import batatabit from "./projects/batatabit.jpg"
 import calculator from "./projects/calculator.jpg"
+
+import vates from "./company/vates.png"
 
 export {
   logo,
@@ -55,12 +60,14 @@ export {
   javascript,
   mongodb,
   nodejs,
+  sql,
   reactjs,
   redux,
   tailwind,
   typescript,
   threejs,
   zod,
+  python,
   thirdweb,
   canvas,
   vox,
@@ -75,5 +82,7 @@ export {
   calculator,
   profile,
   linkedin,
-  _github
+  _github,
+  vates,
+  fastapi
 };

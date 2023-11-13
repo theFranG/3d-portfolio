@@ -4,9 +4,10 @@ import { github } from "../../assets"
 
 export const Button = ({url}) => {
   return (
-    <Link to={`/${url}`}>
-    <button className="w-[110px] p-3 bg-primary flex items-center 
-                        justify-center rounded-xl hover:bg-opacity-75">
+    <Link to={`/work/${url}`}>
+    <button 
+    className="w-[110px] bg-primary flex items-center 
+    justify-center rounded-xl hover:bg-opacity-75 p-3">
     See more
   </button>
   </Link>

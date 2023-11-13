@@ -27,7 +27,11 @@ import {
     pokedux,
     avicii,
     batatabit,
-    calculator
+    calculator,
+    vates,
+    sql,
+    python,
+    fastapi
   } from "../assets";
   
   export const navLinks = [
@@ -78,6 +82,18 @@ import {
       icon: typescript,
     },
     {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "FastAPI",
+      icon: fastapi,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -98,15 +114,35 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "sql",
+      icon: sql,
+    },
+    {
+      name: "mongoDB",
+      icon: mongodb,
+    }
   ];
   
+const experiences = [
+  {
+    title: "Full Stack Developer",
+    company_name: "Vates",
+    icon: vates,
+    iconBg: "#f5f5f5",
+    date: "Nov. 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js.",
+      "Back-end development and implementation with FastAPI.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+]
+
   const projects = [
     {
       url: "vox",
@@ -258,4 +294,4 @@ import {
     },
   ];
   
-  export { services, technologies, projects };
+  export { services, technologies, projects, experiences };
