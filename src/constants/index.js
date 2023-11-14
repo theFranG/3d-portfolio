@@ -98,10 +98,6 @@ import {
       icon: tailwind,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
       name: "HTML 5",
       icon: html,
     },
@@ -120,10 +116,6 @@ import {
     {
       name: "sql",
       icon: sql,
-    },
-    {
-      name: "mongoDB",
-      icon: mongodb,
     }
   ];
   
