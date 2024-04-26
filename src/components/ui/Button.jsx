@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import { github } from "../../assets"
 
 
+import PropTypes from "prop-types";
+
 export const Button = ({url}) => {
   return (
     <Link to={`/work/${url}`}>
@@ -14,14 +16,23 @@ export const Button = ({url}) => {
   )
 }
 
-export const CVButton = () => {
+Button.propTypes = {
+  url: PropTypes.string.isRequired
+};
+
+export const CVButton = ({description}) => {
   return (
     <button 
-    className="p-3 bg-primary border border-white rounded-xl hover:bg-opacity-75">
-    Download CV
+    className="bg-primary border border-white rounded-xl hover:bg-opacity-75 h-[50px] w-[120px]">
+    {description}
   </button>
   )
 }
+
+CVButton.propTypes = {
+  description: PropTypes.string.isRequired
+};
+
 
 export const GitButton = ({url}) => {
   return (
@@ -36,6 +47,11 @@ export const GitButton = ({url}) => {
   )
 }
 
+GitButton.propTypes = {
+  url: PropTypes.string.isRequired
+};
+
+
 export const BackButton = ({url}) => {
   return (
     <Link to={url}>
@@ -46,3 +62,7 @@ export const BackButton = ({url}) => {
   </Link>
   )
 }
+
+BackButton.propTypes = {
+  url: PropTypes.string.isRequired
+};

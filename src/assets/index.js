@@ -42,6 +42,7 @@ import batatabit from "./projects/batatabit.jpg"
 import calculator from "./projects/calculator.jpg"
 
 import vates from "./company/vates.png"
+import mazzoccone from "./company/mazzoccone.png"
 
 export {
   logo,
@@ -83,6 +84,7 @@ export {
   profile,
   linkedin,
   _github,
+  fastapi,
   vates,
-  fastapi
+  mazzoccone
 };

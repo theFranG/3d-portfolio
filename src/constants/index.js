@@ -12,26 +12,24 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
     zod,
     thirdweb,
     vox,
     canvas,
-    redux,
     murcielaco,
     shopi,
     katana,
     bank,
     todo,
-    pokedux,
     avicii,
     batatabit,
     calculator,
     vates,
     sql,
     python,
-    fastapi
+    fastapi,
+    mazzoccone
   } from "../assets";
   
   export const navLinks = [
@@ -121,7 +119,7 @@ import {
   
 const experiences = [
   {
-    title: "Full Stack Developer",
+    title: "Front-Back End Developer",
     company_name: "Vates",
     icon: vates,
     iconBg: "#f5f5f5",
@@ -131,6 +129,19 @@ const experiences = [
       "Back-end development and implementation using FastAPI.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Front-Back End Developer",
+    company_name: "Mazzoccone Abogado Penalista",
+    icon: mazzoccone,
+    iconBg: "#f5f5f5",
+    date: "Jan. 2023 - Present",
+    points: [
+      "Creation and maintenance of a cause management system.",
+      "Front-end development using React.js and Material UI.",
+      "Back-end development using Node.js and SQL databases.",
+      "From the initial design phase to the implementation and ongoing maintenance.",
     ],
   },
 ]
@@ -227,21 +238,6 @@ const experiences = [
       image: todo,
       project_link:'https://francogomez23800.github.io/Todo-React.js/',
       source_code_link: "https://github.com/Francogomez23800/Todo-React.js",
-    },
-    {
-      url: "pokedux",
-      name: "Pokedux",
-      description:"I created this page using React and Redux, incorporating a Pokémon API to retrieve a list of creatures. I also added a feature that enables users to add their preferred Pokémon to a favorites list, which is consistently saved in the local storage.",
-      detailed_description:"This is a creation of a webpage using React and Redux, where I utilize a Pokémon API to fetch a list of creatures. Additionally, I implemented an interesting feature that allows users to add their favorite Pokémon to a special favorites list, which is persistently stored in the browser's localstorage.\n\nCharacteristics:\n\nState Management with Redux: Enhanced manipulation and updating of favorite Pokémon data across the entire application.\n\nFavorites List Functionality: Users can explore the complete Pokémon list and select their favorites.\n\nLocalstorage Persistence.",  
-      technologies:[
-        reactjs,
-        redux,
-        javascript,
-        tailwind
-      ],
-      image: pokedux,
-      project_link:'https://francogomez23800.github.io/pokedux/',
-      source_code_link: "https://github.com/Francogomez23800/pokedux",
     },
     {
       url: "avicii",

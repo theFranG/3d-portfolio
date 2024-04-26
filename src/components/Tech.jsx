@@ -1,5 +1,3 @@
-import React from "react";
-
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -15,12 +13,18 @@ const Tech = () => {
           </div>
         ))}
       </div>
+      <div className="mt-14 flex gap-10">
       <a 
-      className="mt-14"
-      href="/CV/Developer_FranG.pdf"
-      download="/CV/Developer_FranG.pdf">
-          <CVButton/>
+      href="/CV/FrancoGomez_CV.pdf"
+      download="/CV/FrancoGomez_CV.pdf">
+          <CVButton description={'English CV'}/>
       </a>
+      <a
+      href="/CV/FrancoGomez_CV_ESP.pdf"
+      download="/CV/FrancoGomez_CV_ESP.pdf">
+          <CVButton description={'Spanish CV'}/>
+      </a>
+      </div>
     </div>
   );
 };

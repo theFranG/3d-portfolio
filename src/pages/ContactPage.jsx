@@ -1,12 +1,13 @@
 import { Contact, Navbar, StarsCanvas } from "../components";
 import Footer from "../components/Footer";
+
 import { styles } from "../styles";
 
 const ContactPage = () => {
   return (
     <>
-      <StarsCanvas />
       <Navbar />
+      <StarsCanvas />
       <div className="relative">
         <div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
           <div className="mt-10">
@@ -26,9 +27,6 @@ const ContactPage = () => {
         </div>
         <div className={`max-w-7xl mx-auto relative z-0`}>
           <Footer />
-        </div>
-        <div className="absolute top-0 bottom-0 w-full">
-          <StarsCanvas />
         </div>
       </div>
     </>

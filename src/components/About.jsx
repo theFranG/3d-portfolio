@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a web developer with experience in TypeScript and JavaScript, and
-        expertise in frameworks like React and Node.js. I believe in the
-        importance of keeping up to date with the latest technological trends
-        and development methodologies. This allows me to offer effective and
-        efficient solutions. Let's work together to bring your ideas to life!
+        Specializing in web development, I focus on React for front-end and
+        utilize frameworks like Next.js and Vite. My expertise extends to
+        back-end development with Node.js and FastAPI. through my career, I've
+        refined my skills through diverse projects and collaborations with
+        clients, delivering tailored solutions that meet their specific needs.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
