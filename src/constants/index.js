@@ -121,7 +121,7 @@ import {
 const experiences = [
   {
     title: "My beginnings",
-    company_name: "Freelance",
+    company_name: "Learning Path",
     icon: beginning,
     iconBg: "#f5f5f5",
     date: "2021 - 2023",
@@ -130,7 +130,7 @@ const experiences = [
       "I worked on various projects to hone my skills and gain experience in the field.",
       "I focused on front-end development, mastering React.js and creating responsive user interfaces.",
       "I also delved into back-end development, learning Node.js and SQL databases to create full-stack applications.",
-      "I gained experience working with modern technologies like TypeScript, Tailwind CSS, and Zod.",
+      "I gained experience working with modern technologies like TypeScript, Tailwind CSS, Material UI, etc.",
     ],
   },
   {
