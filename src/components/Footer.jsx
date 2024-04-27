@@ -9,7 +9,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-3">
             <a
-              href="https://github.com/Francogomez23800" 
+              href="https://github.com/thefrang" 
               target="_blank">
               <img src={_github} alt="Github" className="w-[35px]" />
             </a>

@@ -41,6 +41,7 @@ import avicii from "./projects/avicii.jpg"
 import batatabit from "./projects/batatabit.jpg"
 import calculator from "./projects/calculator.jpg"
 
+import beginning from "./company/beginning.png"
 import vates from "./company/vates.png"
 import mazzoccone from "./company/mazzoccone.png"
 
@@ -85,6 +86,7 @@ export {
   linkedin,
   _github,
   fastapi,
+  beginning,
   vates,
   mazzoccone
 };

@@ -29,7 +29,8 @@ import {
     sql,
     python,
     fastapi,
-    mazzoccone
+    mazzoccone,
+    beginning,
   } from "../assets";
   
   export const navLinks = [
@@ -119,6 +120,20 @@ import {
   
 const experiences = [
   {
+    title: "My beginnings",
+    company_name: "Freelance",
+    icon: beginning,
+    iconBg: "#f5f5f5",
+    date: "2021 - 2023",
+    points: [
+      "I started my journey as a self-taught developer, learning the basics of web development.",
+      "I worked on various projects to hone my skills and gain experience in the field.",
+      "I focused on front-end development, mastering React.js and creating responsive user interfaces.",
+      "I also delved into back-end development, learning Node.js and SQL databases to create full-stack applications.",
+      "I gained experience working with modern technologies like TypeScript, Tailwind CSS, and Zod.",
+    ],
+  },
+  {
     title: "Front-Back End Developer",
     company_name: "Vates",
     icon: vates,
@@ -133,7 +148,7 @@ const experiences = [
   },
   {
     title: "Front-Back End Developer",
-    company_name: "Mazzoccone Abogado Penalista",
+    company_name: "Mazzoccone Lawyers",
     icon: mazzoccone,
     iconBg: "#f5f5f5",
     date: "Jan. 2023 - Present",
@@ -162,7 +177,7 @@ const experiences = [
       ],
       image: vox,
       project_link:'https://vox-frang.vercel.app/',
-      source_code_link: "https://github.com/Francogomez23800/VOX",
+      source_code_link: "https://github.com/thefrang/VOX",
     },
     {
       url: "nft-drop",
@@ -178,7 +193,7 @@ const experiences = [
       ],
       image: murcielaco,
       project_link:'https://murcielaco-polygon.vercel.app/',
-      source_code_link: "https://github.com/Francogomez23800/polygon-test",
+      source_code_link: "https://github.com/thefrang/polygon-test",
     },    
     {
       url: "shopi",
@@ -194,7 +209,7 @@ const experiences = [
       ],
       image: shopi,
       project_link:'https://react-ecommerce-alpha-ashen.vercel.app/',
-      source_code_link: "https://github.com/Francogomez23800/React-Ecommerce",
+      source_code_link: "https://github.com/thefrang/React-Ecommerce",
     },
     {
       url: "katana-fight",
@@ -208,8 +223,8 @@ const experiences = [
         canvas
       ],
       image: katana,
-      project_link:'https://francogomez23800.github.io/Fighting-Game/',
-      source_code_link: "https://github.com/Francogomez23800/Fighting-Game",
+      project_link:'https://thefrang.github.io/Fighting-Game/',
+      source_code_link: "https://github.com/thefrang/Fighting-Game",
     },
     {
       url: "bank-app",
@@ -223,8 +238,8 @@ const experiences = [
         tailwind
       ],
       image: bank,
-      project_link:'https://francogomez23800.github.io/bank_app/',
-      source_code_link: "https://github.com/Francogomez23800/bank_app/tree/Files/Desktop/React.js/Bank_Modern_App",
+      project_link:'https://thefrang.github.io/bank_app/',
+      source_code_link: "https://github.com/thefrang/bank_app/tree/Files/Desktop/React.js/Bank_Modern_App",
     },
     {
       url: "todo-react",
@@ -236,8 +251,8 @@ const experiences = [
         javascript
       ],
       image: todo,
-      project_link:'https://francogomez23800.github.io/Todo-React.js/',
-      source_code_link: "https://github.com/Francogomez23800/Todo-React.js",
+      project_link:'https://thefrang.github.io/Todo-React.js/',
+      source_code_link: "https://github.com/thefrang/Todo-React.js",
     },
     {
       url: "avicii",
@@ -250,8 +265,8 @@ const experiences = [
         tailwind
       ],
       image: avicii,
-      project_link:'https://francogomez23800.github.io/Async-Avicii/',
-      source_code_link: "https://github.com/Francogomez23800/Async-Avicii/",
+      project_link:'https://thefrang.github.io/Async-Avicii/',
+      source_code_link: "https://github.com/thefrang/Async-Avicii/",
     },
     {
       url: "batatabit",
@@ -263,8 +278,8 @@ const experiences = [
         css
       ],
       image: batatabit,
-      project_link:'https://francogomez23800.github.io/Batatabit-Mobile_First/',
-      source_code_link: "https://github.com/Francogomez23800/Batatabit-Mobile_First",
+      project_link:'https://thefrang.github.io/Batatabit-Mobile_First/',
+      source_code_link: "https://github.com/thefrang/Batatabit-Mobile_First",
     },
     {
       url: "calculator",
@@ -277,8 +292,8 @@ const experiences = [
         css
       ],
       image: calculator,
-      project_link:'https://francogomez23800.github.io/Calculator-2.0/',
-      source_code_link: "https://github.com/Francogomez23800/Calculator-2.0",
+      project_link:'https://thefrang.github.io/Calculator-2.0/',
+      source_code_link: "https://github.com/thefrang/Calculator-2.0",
     },
   ];
   
