@@ -127,11 +127,11 @@ const experiences = [
     date: "2021 - 2023",
     points: [
       "I started my journey as a self-taught developer, learning the basics of web development.",
-      "I worked on various projects to hone my skills and gain experience in the field.",
-      "I focused on front-end development, mastering React.js and creating responsive user interfaces.",
+      "I worked on many projects to hone my skills and gain experience in the field.",
+      "I focused on front-end development, mastering React.js and its frameworks (Next, Vite, etc).",
       "I gained experience working with modern technologies like TypeScript, Tailwind CSS, Material UI, etc.",
       "I also delved into back-end development, learning Node.js and SQL databases to create full-stack applications.",
-      "I created a variety of projects, from social networks to e-commerce websites, even blockchain applications opening up new horizons in the world of web development.",
+      "I start creating a variety of projects, from social networks to e-commerce websites, even blockchain applications.",
     ],
   },
   {
@@ -143,7 +143,7 @@ const experiences = [
     points: [
       "Developing and maintaining web applications using React.js.",
       "Back-end development and implementation using FastAPI.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
@@ -152,7 +152,7 @@ const experiences = [
     company_name: "Mazzoccone Lawyers",
     icon: mazzoccone,
     iconBg: "#f5f5f5",
-    date: "Jan. 2023 - Present",
+    date: "Jan. 2024 - Present",
     points: [
       "Creation and maintenance of a cause management system.",
       "Front-end development using React.js and Material UI.",
