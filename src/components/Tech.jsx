@@ -15,13 +15,13 @@ const Tech = () => {
       </div>
       <div className="mt-14 flex gap-10">
       <a 
-      href="/CV/FrancoGomez_CV.pdf"
-      download="/CV/FrancoGomez_CV.pdf">
+      href="/CV/FranG.pdf"
+      download="FranG.pdf">
           <CVButton description={'English CV'}/>
       </a>
       <a
-      href="/CV/FrancoGomez_CV_ESP.pdf"
-      download="/CV/FrancoGomez_CV_ESP.pdf">
+      href="/CV/FranG_ESP.pdf"
+      download="FranG_ESP.pdf">
           <CVButton description={'Spanish CV'}/>
       </a>
       </div>
@@ -29,4 +29,5 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+const NamedTech = SectionWrapper(Tech, "");
+export default NamedTech;

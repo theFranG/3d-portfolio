@@ -136,10 +136,10 @@ const experiences = [
   },
   {
     title: "Front-Back End Developer",
-    company_name: "Vates",
+    company_name: "Vates (Intership)",
     icon: vates,
     iconBg: "#f5f5f5",
-    date: "Nov. 2023 - Present",
+    date: "Nov. 2023 - July 2024",
     points: [
       "Developing and maintaining web applications using React.js.",
       "Back-end development and implementation using FastAPI.",
@@ -156,7 +156,7 @@ const experiences = [
     points: [
       "Creation and maintenance of a cause management system.",
       "Front-end development using React.js and Material UI.",
-      "Back-end development using Node.js and SQL databases.",
+      "Back-end development using Node.js and PostgreSQL as DB.",
       "From the initial design phase to the implementation and ongoing maintenance.",
     ],
   },
