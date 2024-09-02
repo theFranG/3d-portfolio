@@ -2,10 +2,10 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import { motion } from "framer-motion"
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { styles } from "../styles";
 
 const ExperienceCard = ({ experience }) => {
   return (
