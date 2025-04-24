@@ -1,7 +1,7 @@
 import { BallCanvas } from "./canvas";
+import { CVButton } from "./ui/Button";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { CVButton } from "./ui/Button";
 
 const Tech = () => {
   return (

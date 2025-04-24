@@ -1,9 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
 import { github } from "../assets";
 import {Button} from "./ui/Button";
+import PropTypes from "prop-types";
 import { isMobile } from "../utils/motion";
 
 
@@ -53,5 +53,13 @@ const ProjectCard = ({
       </motion.div>
     );
   };
-
+  ProjectCard.propTypes = {
+    index: PropTypes.number.isRequired,
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    source_code_link: PropTypes.string.isRequired,
+  };
+  
   export default ProjectCard

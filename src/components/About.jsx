@@ -1,8 +1,8 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import PropTypes from "prop-types";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,11 +14,6 @@ const ServiceCard = ({ index, title, icon }) => (
       className="w-full white-golden-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
         className="bg-primary rounded-[20px] py-5 px-12 
         min-h-[280px] flex justify-evenly items-center flex-col"
       >
@@ -35,6 +30,11 @@ const ServiceCard = ({ index, title, icon }) => (
     </motion.div>
   </Tilt>
 );
+ServiceCard.propTypes = {
+  index: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+};
 
 const About = () => {
   return (
@@ -49,7 +49,7 @@ const About = () => {
       >
         Specializing in web development, I focus on React for front-end and
         utilize frameworks like Next.js and Vite. My expertise extends to
-        back-end development with Node.js and FastAPI. through my career, I've
+        back-end development with Node.js and FastAPI. through my career, I&apos;ve
         refined my skills through diverse projects and collaborations with
         clients, delivering tailored solutions that meet their specific needs.
       </motion.p>
@@ -63,4 +63,5 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+const WrappedAbout = SectionWrapper(About, "about");
+export default WrappedAbout;

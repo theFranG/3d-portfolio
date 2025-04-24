@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { styles } from "../styles";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { navLinks } from "../constants/index";
 import { menu, close, logo } from "../assets/index";
-import { motion } from "framer-motion";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -53,7 +53,6 @@ const Navbar = () => {
                   : "text-secondary"
               } 
                         hover:text-[#D4AF37] text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
             >
               <a href={`/${nav.id}`}>{nav.title}</a>
             </li>
@@ -87,7 +86,6 @@ const Navbar = () => {
                     delay: toggle ? 0.1 * index : 0,
                   }}
                   onClick={() => {
-                    setActive(nav.title);
                     setToggle(!toggle);
                   }}
                 >

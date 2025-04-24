@@ -40,7 +40,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            Hi, I'm <span className="text-[#D4AF37]">Franco</span>
+            Hi, I&apos;m <span className="text-[#D4AF37]">Franco</span>
           </motion.h1>
           <motion.p
             className={`${styles.heroSubText} md:mt-2 text-white-100`}

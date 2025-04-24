@@ -1,11 +1,12 @@
+import React from "react";
+import { styles } from "../styles";
+import { Navbar } from "../components";
+import { motion } from "framer-motion";
 import { projects } from "../constants";
 import { useParams } from "react-router-dom";
-import { Navbar } from "../components";
-import { styles } from "../styles";
-import { motion } from "framer-motion";
-import React from "react";
 
 import { BackButton, GitButton } from "../components/ui/Button";
+
 import Footer from "../components/Footer";
 
 const ProjectPage = () => {
@@ -30,7 +31,7 @@ const ProjectPage = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}>
-          <a href={project.project_link} target="_blank" className="relative">
+          <a href={project.project_link} target="_blank" rel="noreferrer" className="relative">
             <motion.img
               src={project.image}
               alt="project image"

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -148,4 +148,5 @@ const Contact3D = () => {
   );
 };
 
-export default SectionWrapper(Contact3D, "contact");
+const WrappedContact3D = SectionWrapper(Contact3D, "contact");
+export default WrappedContact3D;

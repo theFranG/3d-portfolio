@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import "react-vertical-timeline-component/style.min.css";
 
 import { textVariant } from "../utils/motion";
+import PropTypes from "prop-types";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -82,5 +83,27 @@ const Experience = () => {
     </>
   );
 };
-
-export default SectionWrapper(Experience, "work");
+ExperienceCard.propTypes = {
+  experience: PropTypes.shape({
+    date: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    iconBg: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    company_name: PropTypes.string.isRequired,
+    points: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};
+Experience.propTypes = {
+  experiences: PropTypes.arrayOf(
+    PropTypes.shape({
+      date: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+      iconBg: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      company_name: PropTypes.string.isRequired,
+      points: PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
+  ).isRequired,
+};
+const WrappedExperience = SectionWrapper(Experience, "work");
+export default WrappedExperience;

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -37,4 +36,5 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+const WrappedWorks = SectionWrapper(Works, "");
+export default WrappedWorks;

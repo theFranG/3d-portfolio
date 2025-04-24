@@ -13,7 +13,7 @@ const ContactPage = () => {
           <div className="mt-10">
             <p className={`${styles.sectionSubText} `}>Contact</p>
             <h2 className={`${styles.sectionHeadText}`}>
-              Let's work toghether.
+              Let&apos;s work toghether.
             </h2>
             <p className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]">
               I am available to create and work on new projects! Leave your
