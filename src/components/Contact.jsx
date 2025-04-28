@@ -1,5 +1,6 @@
-import  { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+
+import { useRef, useState } from "react";
 import { AstronautCanvas } from "./canvas";
 
 const isFormValid = (formData) => {
@@ -45,10 +46,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_zlsgakv",
+        "service_vf0aqzl",
         "template_ogntqq8",
         formRef.current,
-        "Y255d3382mYI7pG2z"
+        "n2jkQlrWjbLUSMyo4"
       )
       .then(
         () => {
@@ -72,10 +73,8 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="xl:mt-12 flex xl:flex-row flex-col-reverse sm:gap-10 overflow-hidden"
-    >
-      <div className='flex-[0.75] p-8 rounded-2xl'>
+    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse sm:gap-10 overflow-hidden">
+      <div className="flex-[0.75] p-8 rounded-2xl">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -138,12 +137,12 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-        </div>
-        <div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] mt-5 md:mt-0'>
-        <AstronautCanvas />
-        </div>
       </div>
+      <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] mt-5 md:mt-0">
+        <AstronautCanvas />
+      </div>
+    </div>
   );
 };
 
-export default Contact
+export default Contact;

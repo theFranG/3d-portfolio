@@ -28,9 +28,10 @@ import {
   vates,
   sql,
   python,
-  fastapi,
   mazzoccone,
   beginning,
+  aws,
+  devops,
 } from "../assets";
 
 export const navLinks = [
@@ -50,19 +51,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "React Developer",
+    title: "Web Development",
     icon: web,
   },
   {
-    title: "Front-End",
+    title: "Cloud Infrastructure",
     icon: mobile,
   },
   {
-    title: "Back-End",
+    title: "Backend & Databases",
     icon: backend,
   },
   {
-    title: "Web Designer",
+    title: "Deployments & Automation",
     icon: creator,
   },
 ];
@@ -85,24 +86,8 @@ const technologies = [
     icon: python,
   },
   {
-    name: "FastAPI",
-    icon: fastapi,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
   },
   {
     name: "git",
@@ -115,6 +100,14 @@ const technologies = [
   {
     name: "sql",
     icon: sql,
+  },
+  {
+    name: "aws",
+    icon: aws,
+  },
+  {
+    name: "devops",
+    icon: devops,
   },
 ];
 

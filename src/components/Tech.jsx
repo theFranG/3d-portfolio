@@ -14,16 +14,12 @@ const Tech = () => {
         ))}
       </div>
       <div className="mt-14 flex gap-10">
-      <a 
-      href="/CV/FranG.pdf"
-      download="FranG.pdf">
-          <CVButton description={'English CV'}/>
-      </a>
-      <a
-      href="/CV/FranG_ESP.pdf"
-      download="FranG_ESP.pdf">
-          <CVButton description={'Spanish CV'}/>
-      </a>
+        <a href="/CV/FranG.pdf" download="FranG.pdf">
+          <CVButton description={"English CV"} />
+        </a>
+        <a href="/CV/FranG_ESP.pdf" download="FranG_ESP.pdf">
+          <CVButton description={"Spanish CV"} />
+        </a>
       </div>
     </div>
   );

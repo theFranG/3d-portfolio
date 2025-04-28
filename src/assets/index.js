@@ -29,6 +29,8 @@ import canvas from "./tech/canvas.png"
 import sql from "./tech/sql.png"
 import python from "./tech/python.png"
 import fastapi from "./tech/fastapi.svg"
+import aws from "./tech/aws.png"
+import devops from "./tech/devops.png"
 
 import vox from "./projects/vox.jpg"
 import murcielaco from "./projects/murcielaco.jpg"
@@ -88,5 +90,7 @@ export {
   fastapi,
   beginning,
   vates,
-  mazzoccone
+  mazzoccone,
+  aws,
+  devops
 };
