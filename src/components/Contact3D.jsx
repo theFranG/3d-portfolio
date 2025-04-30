@@ -1,11 +1,13 @@
+import emailjs from "@emailjs/browser";
+
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
 
 const isFormValid = (formData) => {
   const requiredFields = ["name", "email", "subject", "message"];
@@ -48,12 +50,13 @@ const Contact3D = () => {
       return;
     }
 
+
     emailjs
       .sendForm(
-        "service_vf0aqzl",
-        "template_ogntqq8",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         formRef.current,
-        "n2jkQlrWjbLUSMyo4"
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         () => {

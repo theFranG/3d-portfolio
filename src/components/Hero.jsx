@@ -48,8 +48,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            I am a web developer specialized in React, <br />
-            focused on creating front-end applications.
+            Code, infrastructure, solutions... <br/> I bring it together.
           </motion.p>
         </div>
       </div>
