@@ -1,7 +1,10 @@
 {
-  "name": "new-portfolio",
-  "private": true,
+  "name": "frang-portfolio",
   "version": "0.0.0",
+  "description": "A portfolio website showcasing FranG's work and skills.",
+  "author": "FranG",
+  "license": "ISC",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
