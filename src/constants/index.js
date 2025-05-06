@@ -141,18 +141,19 @@ const experiences = [
     ],
   },
   {
-    title: "Front-Back End Developer",
+    title: "Full-Stack & Infrastructure Engineer",
     company_name: "Mazzoccone Lawyers",
     icon: mazzoccone,
     iconBg: "#f5f5f5",
     date: "Jan. 2024 - Present",
     points: [
-      "Creation and maintenance of a cause management system.",
+      "End-to-end development and maintenance of a cause management system.",
       "Front-end development using React.js and Material UI.",
-      "Back-end development using Node.js and PostgreSQL as DB.",
-      "From the initial design phase to the implementation and ongoing maintenance.",
+      "Back-end development with Node.js and PostgreSQL databases.",
+      "Infrastructure setup, cloud deployments, and automation of development workflows.",
+      "Handled the entire lifecycle: from initial design to deployment and ongoing maintenance.",
     ],
-  },
+  }
 ];
 
 const projects = [
