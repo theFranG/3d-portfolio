@@ -1,11 +1,12 @@
 {
   "name": "frang-portfolio",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A portfolio website showcasing FranG's work and skills.",
   "author": "FranG",
   "license": "ISC",
   "private": true,
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
